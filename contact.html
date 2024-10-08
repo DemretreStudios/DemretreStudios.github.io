@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demretre Studios - Startseite</title>
+    <title>Demretre Studios - Kontakt</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="main-header">
+    <header>
         <div class="logo">Demretre Studios</div>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Startseite</a></li>
+                <li><a href="index.html">Startseite</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">Über uns</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="contact.html" class="active">Kontakt</a></li>
             </ul>
         </nav>
         <input type="text" class="search-bar" placeholder="Suche...">
     </header>
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1>Fashion, die Inspiriert</h1>
-            <p>Entdecke unseren exklusiven Stil, der deinen Alltag aufpeppt.</p>
-            <a href="shop.html" class="cta-button">Unsere Kollektion ansehen</a>
-        </div>
+    <section class="contact-section">
+        <h2>Kontakt</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Senden</button>
+        </form>
     </section>
     <footer class="footer">
         <p>© 2024 Demretre Studios | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
