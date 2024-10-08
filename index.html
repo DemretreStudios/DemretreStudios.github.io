@@ -2,56 +2,75 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demretre Studios - Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Demretre Studios - Dein Modestore</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
+        <div class="logo">Demretre Studios</div>
         <nav>
-            <div class="logo">Demretre Studios</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Produkte</a></li>
-                <li><a href="about.html">Über Uns</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-                <li><a href="legal.html">Impressum & Datenschutz</a></li>
+            <ul>
+                <li><a href="#home">Startseite</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#cart">Warenkorb</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero-section">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
         <h1>Willkommen bei Demretre Studios</h1>
-        <p>Erlebe den Stil und die Kreativität unserer einzigartigen Modekollektionen.</p>
-        <a href="products.html" class="cta-button">Unsere Kollektion entdecken</a>
+        <p>Entdecke die neuesten Trends und Styles.</p>
+        <a href="#shop" class="cta-button">Jetzt Shoppen</a>
     </section>
 
-    <section class="featured-products">
-        <h2>Highlights unserer Kollektion</h2>
-        <div class="product-preview">
+    <!-- Shop Section -->
+    <section id="shop" class="shop-section">
+        <h2>Unsere Produkte</h2>
+        <div class="product-grid">
             <div class="product-item">
                 <img src="product1.jpg" alt="Produkt 1">
-                <h3>T-Shirt Classic</h3>
-                <p>Stilvolles und minimalistisches Design für den Alltag.</p>
-                <a href="product-detail.html" class="details-button">Mehr erfahren</a>
+                <h3>Produktname 1</h3>
+                <p>Beschreibung des Produkts.</p>
+                <button>In den Warenkorb</button>
             </div>
             <div class="product-item">
                 <img src="product2.jpg" alt="Produkt 2">
-                <h3>Hoodie Premium</h3>
-                <p>Bequem und perfekt für jede Gelegenheit.</p>
-                <a href="product-detail.html" class="details-button">Mehr erfahren</a>
+                <h3>Produktname 2</h3>
+                <p>Beschreibung des Produkts.</p>
+                <button>In den Warenkorb</button>
             </div>
+            <!-- Weitere Produkte hier -->
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Demretre Studios. Alle Rechte vorbehalten.</p>
-        <div class="social-media-links">
-            <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a>
-        </div>
-    </footer>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>Über Demretre Studios</h2>
+        <p>Demretre Studios ist dein Ort für einzigartige und stylische Mode. Wir legen Wert auf Qualität und Design.</p>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Kontaktiere uns</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Senden</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Demretre Studios | Impressum | Datenschutz</p>
+    </footer>
 </body>
 </html>
